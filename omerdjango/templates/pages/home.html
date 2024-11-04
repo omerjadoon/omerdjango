@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+hhh
+{% block content %}
+{% load nvd3_tags %}
+
+    <h1>Sample D3 Chart</h1>
+    <div id="chart_container" style="width:600px;height:400px; background-color: red;"></div>
+    {% load_chart "pieChart" chart_data container="chart_container" %}
+
+    {% endblock content %}
